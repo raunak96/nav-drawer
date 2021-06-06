@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Navigation Drawer</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="nav">
+				<ul>
+					<li>
+						<a href=""
+							><span class="icon"
+								><i class="fas fa-home"></i></span
+							><span class="title">Home</span></a
+						>
+					</li>
+					<li>
+						<a href=""
+							><span class="icon"
+								><i class="fas fa-user"></i></span
+							><span class="title">Profile</span></a
+						>
+					</li>
+					<li>
+						<a href=""
+							><span class="icon"
+								><i class="fas fa-comment"></i></span
+							><span class="title">Message</span></a
+						>
+					</li>
+					<li>
+						<a href=""
+							><span class="icon"
+								><i class="fas fa-question-circle"></i></span
+							><span class="title">Help</span></a
+						>
+					</li>
+					<li>
+						<a href=""
+							><span class="icon"><i class="fas fa-cog"></i></span
+							><span class="title">Settings</span></a
+						>
+					</li>
+					<li>
+						<a href=""
+							><span class="icon"
+								><i class="fas fa-lock"></i></span
+							><span class="title">Change Password</span></a
+						>
+					</li>
+					<li>
+						<a href=""
+							><span class="icon"
+								><i class="fas fa-sign-out-alt"></i></span
+							><span class="title">Sign Out</span></a
+						>
+					</li>
+				</ul>
+			</div>
+			<div class="toggle"></div>
+		</div>
+		<script>
+			document.querySelector(".toggle").onclick = e => {
+				e.target.classList.toggle("active");
+				document.querySelector(".nav").classList.toggle("active");
+			};
+		</script>
+	</body>
+</html>
